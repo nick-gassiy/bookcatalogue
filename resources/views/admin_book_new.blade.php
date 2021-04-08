@@ -13,7 +13,6 @@
                 <br>
                 <br>
                     <h2>Автор</h2>
-
                     <select id="choose_author" name="choose_author" class="form-control" data-error="Виберете автора">
                         <option value="" selected disabled >Добавить автора</option>
                         @foreach(\App\Models\Author::all() as $author)
@@ -23,7 +22,6 @@
                         @endforeach
                     </select>
                     <h2>Жанр</h2>
-
                     <select id="choose_genre" name="choose_genre" class="form-control" data-error="Виберете жанр">
                         <option selected disabled>Добавить жанр</option>
                         @foreach(\App\Models\Genre::all() as $genre)
@@ -34,12 +32,9 @@
                     </select>
                     <br>
                     <br>
-
-
                     <div class="form-group">
                         <input type="file" name="image">
                     </div>
-
                 <button type="submit" name ='send' id="send" class="btn btn-success btn-send pt-2 btn-ld"  >
                     Сохранить
                 </button>
